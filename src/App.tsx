@@ -6,7 +6,12 @@ import { observer } from 'mobx-react'
 const App: FC = () => {
     usePageIdentification()
 
-    return <Routes />
+    return (
+        <div className="app-wrapper">
+            <Routes />
+        </div>
+
+    )
 }
 
 export default observer(App)

@@ -20,6 +20,7 @@
     "hooks": "^0.3.2",
     "mobx-react": "^9.2.0",
     "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.1.0",
     "react-hook-form": "^7.57.0",
     "react-router-dom": "^7.6.2",
     "routes": "^2.1.0",
