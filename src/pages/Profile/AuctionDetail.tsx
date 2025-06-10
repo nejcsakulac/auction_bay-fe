@@ -79,7 +79,6 @@ const AuctionDetail = () => {
             const numericId = Number(id)
             await placeBid(numericId, numericBidAmount)
             setBidAmount('')
-            // Refetch auction details and bids after a successful bid placement
             await loadAuctionDetails()
             await loadBids()
         } catch (error) {
@@ -90,7 +89,7 @@ const AuctionDetail = () => {
 
 
     const renderBids = () => bids.map((bid, index) => {
-        const d = new Date(bid.bidTime) // Temporary variable to avoid creating multiple new Date objects
+        const d = new Date(bid.bidTime)
         const formattedDate = `${d.getHours().toString().padStart(2, '0')}:${d.getMinutes().toString().padStart(2, '0')} ${d.getDate().toString().padStart(2, '0')}.${(d.getMonth() + 1).toString().padStart(2, '0')}.${d.getFullYear()}`
 
         return (
@@ -123,7 +122,7 @@ const AuctionDetail = () => {
         if (!auction) return null
         const now = new Date()
         const endTime = new Date(auction.endTime)
-        if (now > endTime) return null // Auction has ended
+        if (now > endTime) return null
 
         const msRemaining = endTime.getTime() - now.getTime()
         return Math.ceil(msRemaining / (1000 * 60 * 60 * 24))
@@ -176,7 +175,6 @@ const AuctionDetail = () => {
                             {auction?.description || ''}
                         </div>
 
-                        {/*Ne pokaže v primeru, da je auction ustvaril currentUser ali je endTime ze zgodil*/}
                         {remainingDays !== null && auction?.userId !== currentUserID && (
                             <div className="item-detail-placing-bid">
                                 Bid:

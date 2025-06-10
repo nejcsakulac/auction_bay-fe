@@ -6,7 +6,6 @@ import { routes} from "../../constants/routerConstants";
 
 const Login: FC = () => {
     return (
-        // Set the parent container to take up the full viewport height
         <div style={{ display: 'flex', height: '100vh' }}>
             <div style={{ flex: 2, backgroundColor: 'lightgray' }}>
                 <Layout>
@@ -14,8 +13,8 @@ const Login: FC = () => {
                         src="/images/login_page.png"
                         alt="AuctionBay"
                         style={{
-                            width: '968px', // Hug to 64px
-                            height: '1024px', // Hug to 64px
+                            width: '968px',
+                            height: '1024px',
                         }}
                     />
                 </Layout>

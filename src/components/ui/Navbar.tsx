@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import type { FC } from 'react'
 import { NavLink, useNavigate, Link } from 'react-router-dom'
 import authStore from 'stores/auth.store'
-import * as API from 'api/Api'
-import { StatusCode } from 'constants/errorConstants'
 import ToastContainer from 'react-bootstrap/ToastContainer'
 import Toast from 'react-bootstrap/Toast'
 import 'bootstrap/js/src/collapse.js'
@@ -23,7 +21,6 @@ const Navbar: FC = () => {
     return (
         <>
             <header>
-                {/* Adjust the container div to include your styling requirements */}
                 <div className="navbar">
                     <div className="circle">
                         <img

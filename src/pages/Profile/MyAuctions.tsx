@@ -37,7 +37,7 @@ const Profile: FC = () => {
 
     const clearImage = (e: { preventDefault: () => void; stopPropagation: () => void }) => {
         e.preventDefault()
-        e.stopPropagation() // Stop the event from propagating further
+        e.stopPropagation()
         setImage(null)
         setSelectedFile(null)
     }
@@ -62,7 +62,7 @@ const Profile: FC = () => {
         try {
             if (currentEditAuction && currentEditAuction.id) {
                 await updateAuction(currentEditAuction.id, formData)
-                // Here, instead of reloading the page, reset states as needed
+
                 setShowEditPopup(false)
                 setTitle('')
                 setDescription('')

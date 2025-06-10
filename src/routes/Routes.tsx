@@ -25,9 +25,7 @@ type AppRoute = RouteProps & {
 const Home = lazy(() => import('pages/Landing/Home'))
 const Login = lazy(() => import('pages/Landing/Login'))
 
-/* Private routes */
 
-/* Restricted routes */
 
 /* Error routes */
 const Page404 = lazy(() => import('pages/Page404'))

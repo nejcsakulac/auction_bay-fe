@@ -13,7 +13,6 @@ import FormLabel from 'react-bootstrap/FormLabel'
 import * as API from 'api/Api'
 import { StatusCode } from 'constants/errorConstants'
 import { observer } from 'mobx-react'
-import Avatar from 'react-avatar'
 import authStore from 'stores/auth.store'
 
 const RegisterForm: FC = () => {

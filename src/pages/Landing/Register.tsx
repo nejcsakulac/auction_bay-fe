@@ -6,7 +6,6 @@ import RegisterForm from '../../components/user/RegisterForm'
 
 const Login: FC = () => {
     return (
-        // Set the parent container to take up the full viewport height
         <div style={{ display: 'flex', height: '100vh' }}>
             <div style={{ flex: 2, backgroundColor: 'lightgray' }}>
                 <Layout>
@@ -14,8 +13,8 @@ const Login: FC = () => {
                         src="/images/login_page.png"
                         alt="AuctionBay"
                         style={{
-                            width: '968px', // Hug to 64px
-                            height: '1024px', // Hug to 64px
+                            width: '968px',
+                            height: '1024px',
                         }}
                     />
                 </Layout>
@@ -32,13 +31,13 @@ const Login: FC = () => {
                 <div style={{
                     backgroundColor: 'white',
                     padding: '20px',
-                    borderRadius: '30px', // Rounded edges for the right container
+                    borderRadius: '30px',
                     minHeight: '100%',
                     minWidth: '450px',
-                    maxWidth: '400px', // Optional: limit the width of the container
+                    maxWidth: '400px',
                     display: 'flex',
-                    flexDirection: 'column', // Center items vertically
-                    alignItems: 'center', // Center items horizontally
+                    flexDirection: 'column',
+                    alignItems: 'center',
                 }}>
                     <div className="circle" style={{marginBottom: '170px', marginTop: '20px'}}>
                         <img
@@ -48,7 +47,6 @@ const Login: FC = () => {
                     </div>
                     <RegisterForm/>
                     <div style={{flex: 1}}></div>
-                    {/* Create space to push the link to the bottom */}
                     <div className="fs-6" style={{marginBottom: '30px'}}>
                         Already have an account?{' '}
                         <Link

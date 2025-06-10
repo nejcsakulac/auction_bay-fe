@@ -3,7 +3,6 @@ import {useLocation, useNavigate} from 'react-router-dom'
 import authStore from 'stores/auth.store'
 import * as API from 'api/Api'
 import {fetchMe, updateUser} from 'api/Api'
-import {StatusCode} from 'constants/errorConstants'
 import ToastContainer from 'react-bootstrap/ToastContainer'
 import Toast from 'react-bootstrap/Toast'
 import 'bootstrap/js/src/collapse.js'
@@ -123,7 +122,7 @@ const LoggedInNavBar: FC = () => {
 
 
     const handleProfileUpdate = async (e: { preventDefault: () => void }) => {
-        e.preventDefault() // Prevent the default form submission behavior
+        e.preventDefault()
 
         const userData = {
             first_name: firstName,
@@ -194,7 +193,6 @@ const LoggedInNavBar: FC = () => {
             setImage(null)
             setaddAuctionPopup(false)
 
-            // reload the page to reflect the new auction
             window.location.reload()
         } catch (error) {
             console.error('Failed to place auction:', error)
