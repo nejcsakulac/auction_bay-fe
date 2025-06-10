@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import Layout from '../../components/ui/Layout'
 import { Link } from 'react-router-dom'
-import { routes } from '../../constants/routesConstants'
+import { routes} from "../../constants/routerConstants";
 import RegisterForm from '../../components/user/RegisterForm'
 
 const Login: FC = () => {

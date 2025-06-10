@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import Layout from '../../components/ui/Layout'
 import LoginForm from '../../components/user/LoginForm'
 import { Link } from 'react-router-dom'
-import { routes } from '../../constants/routesConstants'
+import { routes} from "../../constants/routerConstants";
 
 const Login: FC = () => {
     return (

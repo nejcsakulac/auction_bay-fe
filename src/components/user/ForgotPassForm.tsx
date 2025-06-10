@@ -8,7 +8,6 @@ import Form from 'react-bootstrap/Form'
 import { Controller } from 'react-hook-form'
 import { Link, useNavigate } from 'react-router-dom'
 import { observer } from 'mobx-react'
-import {routes} from '../../constants/routesConstants'
 
 const LoginForm: FC = () => {
     const navigate = useNavigate()

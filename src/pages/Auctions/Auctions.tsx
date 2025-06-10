@@ -39,14 +39,11 @@ const Profile: FC = () => {
     }
 
     const getUserBiddingStatus = (auction: AuctionType) => {
-        // Assuming currentWinner is an ID. Adjust logic as needed.
         const isCurrentUserWinning = auction.currentWinner === currentUserID
 
         if (auction.userHasBid) {
             return isCurrentUserWinning ? 'winning' : 'outbid'
         } else {
-            // If the user hasn't bid, you might want to show 'inProgress', 'notStarted', or some other status.
-            // Adjust this logic based on your app's requirements.
             return 'inProgress'
         }
     }
@@ -70,7 +67,6 @@ const Profile: FC = () => {
                     <Link to={`/auction/${auction.id}`} key={auction.id} className="bidding-container" style={{ textDecoration: 'none' }}>
                         <div key={auction.id} className="bidding-container">
                             <div className="in-progress-element-container">
-                                {/* tega tu nebi smelo prikazvat ! */}
                                 {status === 'Done' ? (
                                     <DoneSmall/>
                                 ) : null}

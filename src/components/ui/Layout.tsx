@@ -1,5 +1,5 @@
 import React from 'react'
-import type { FC, ReactNode } from 'react'
+import { FC, ReactNode } from 'react'
 
 
 interface Props {

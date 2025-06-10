@@ -7,7 +7,7 @@ import { StatusCode } from 'constants/errorConstants'
 import ToastContainer from 'react-bootstrap/ToastContainer'
 import Toast from 'react-bootstrap/Toast'
 import 'bootstrap/js/src/collapse.js'
-import { routes } from 'constants/routesConstants'
+import { routes} from "../../constants/routerConstants";
 
 
 const Navbar: FC = () => {
